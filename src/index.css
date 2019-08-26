@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|Raleway');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+html {
+background: url(https://img.freepik.com/free-vector/vibrant-pink-watercolor-painting-background_53876-58930.jpg);
+  background-size: cover;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+#wrapper {
+  margin: 0 auto;
+  width: 80vw;
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 4px dashed white;
+  background-color: rgba(255,255,255, .5);
+}
+
+#title {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: pink;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#text {
+  text-align: center;
+  font-size: 2rem;
+  color: grey;
+}
+#quoteR{
+  padding-right: 1rem;
+  vertical-align: top;
+  margin-top: -1rem;
+}
+
+#quoteL {
+  padding-left: 1rem;
+  vertical-align: bottom;
+  margin-bottom: -1rem;
+}
+
+
+#quoteR, #quoteL {
+  font-weight: 900;
+  color: pink;
+  font-size: 2.5rem;
+}
+
+#author {
+  text-align: right;
+  font-size: 1.6rem;
+  font-style: italic;
+  padding-top: 1.8rem;
+}
+
+#buttons {
+  padding-top: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button:focus {outline:0;}
+
+#new-quote {
+  background-color: pink;
+  padding: .9rem 1.2rem;
+  color: grey;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-right: .6rem;
+}
+
+.tweet {
+  background-color: #00aced;
+  padding: .9rem 1.2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+.fa-twitter {
+  padding-right: .5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* MEDIA QUERIES  */
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    width: 95vw;
+  }
+  #title {
+    font-size: 3rem;
+  }
+  #text, #author {
+    font-size: 1.5rem;
+  }
+
+  #new-quote, .tweet {
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+  }
+  #quoteR, #quoteL {
+    font-size: 1.5rem;
+  }
+}
